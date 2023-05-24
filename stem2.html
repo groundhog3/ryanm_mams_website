@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ryan Mechery MAMS '23</title>
+  <link rel="shortcut icon" type="image/jpg" href="./icons/favicon_round.png" />
+  <meta name="author" content="Ryan Mechery">
+  <meta name="description" content="This is my Stem2 page.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles/style.css" rel="stylesheet">
+  <!-- Below is the link to the bootstrap stylesheet, don't remove this one. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap-grid.css" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="myNav" class="overlay"></div>
+
+  <div id="topBar"></div>
+
+  <div class="parallax-header">
+    <h1>Stem II</h1>
+    <p>scroll down to learn more</p>
+</div>
+
+<div id="stem2-parallax" class="parallax"></div>
+<!-- This script contains an array of the all images used for parallax. -->
+<script src="./scripts/parallaxScript.js"></script>
+
+<h2 class="stem-h2 mt-4 mb-4">The Paper Crane – An Automatic Page Turning Device</h2>
+<div class="container mt-3" id="pdfRenderDiv">
+  <div class="row">
+    <div class="col small-block">
+      <h2>Overview</h2>
+      <p>During the STEM II or Assistive Technology Project, we follow the engineering design process to design, prototype, and build assistive devices for individuals or groups in the greater Worcester area. We are given two and a half months starting in March to build and refine prototypes and also write a design study. At the end of the year, we present and deliver our work to our clients.</p>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 col-lg small-block">
+      <h2>Problem</h2>
+      <p>The device is targeted towards people with motor impairments, particularly in their hands, wrists, and arms. We plan to make the device accessible for individuals with a wide range of disabilities. This device is not targeted for a specific age group. </p>
+  </div>
+  <div class="col-sm-12 col-lg small-block p-3">
+      <h2>Target Audience</h2>
+      <p>People with motor disabilities have difficulty turning book pages independently, making the reading process difficult and unenjoyable.</p>
+  </div>
+</div>
+
+
+<div class="row">
+    <div class="col small-block">
+      <h2>Market Research</h2>
+      <p>&emsp;&emsp;Research into existing products has revealed three main competitors. The first is a device called the “Automatic Electronic Book Page Turner Device for the Disabled”, which works by loading pages between ten plastic prongs that turn the page after receiving a user input (“Automatic Electronic Book Page turner device for the disabled”, 2017). The primary drawback of this design is that it requires either good physical dexterity or a caretaker to help install the pages into the slots, thus inhibiting the user’s autonomy. Additionally, the device is expensive, with a cost of $371.00, and was originally designed to turn sheet music, limiting the size and thickness of compatible books. 
+        <br><br>&emsp;&emsp;The second competitor is the Quad Hand Page Turner, which consists of a metal loop fitted with a rubber tip, intended to fit comfortably around the user’s hand. This device is affordable, costing around $22.00, and is effective in flipping heavy coated paper, but poses the risk of damaging thinner pages (“Quad Hand Page Turner”, n.d.). The device also relies heavily on the user having good motor control over their arms and hands, limiting the targeted audience.
+        <br><br>&emsp;&emsp;The final competitor is a device described in a paper titled “Implementation of a Reusable Adhesive in a Novel Automated Page-turner” by Abueg et al., 2004. The inventors describe a device that uses an adhesive pad on a swivel arm to turn pages. This design is not currently on the market, making it inaccessible for our target audience. 
+    </p>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 col-lg small-block">
+      <img class="rounded mx-auto d-block mt-3" src="images/STEMII_Figure_1.jpg" alt="Picture of Stem2 Figure" style="display: inline; width: 80%;">
+      <p><strong>Figure 1. First prototype of preliminary design.</strong> The first design was built with a PVC pipe as the arm body and an ApplianPar brand wheel with hot glue ridges added onto the outside of the tire for additional traction with the page.</p>
+  </div>
+
+  <div class="col-sm-12 col-lg small-block">
+      <h2>Design Approach</h2> 
+      <p>&emsp;&emsp;To address the problem, we designed a device that uses a wheel to roll the page up and a small rotating arm to flip the page over. The wheel is mounted on an arm that is able to rotate to turn pages both forwards and backwards. Our first prototype was built with a PVC pipe body for the arm and an ApplianPar brand wheel with hot glue ridges for additional traction (Fig. 1). The body was attached to an MG996R servo motor which allowed for rotation to forward turning and backward turning orientations. The wheel was rotated with a MG90S 360-degree servo motor. The motors were powered and controlled by an Arduino Uno and a 12-bit PWM servo driver. Wiring was done with the Arduino Uno and some breadboards, and software was written in the Arduino application. </p>
+
+      <p>&emsp;&emsp;In the second prototype, we replaced the PVC pipe body with an adjustable 3D printed body that can be extended or collapsed to work with a variety of book sizes (Fig. 2). The ApplianPar wheel did not provide enough traction with the page even with the hot glue additions and was too large for the new body, so we replaced it with a smaller Lego brand wheel that had higher traction (Fig. 2). We also built a plywood box to temporarily store the electrical components of the device (Fig. 3). The motor configurations for the arm and wheel remained the same as in the first prototype, and we added three MS18 180-degree motors for the flipping arm and two page clamps. CAD models were in development for the actual flipping arm and clamp parts that attach to the motors.</p>
+  </div>
+</div>
+
+
+<div class="row">
+    <div class="col-sm-12 col-lg small-block">
+      <img class="mt-3 center" src="images/STEMII_Figure_2.jpg" alt="Picture of Stem2 Figure" style="display: inline; width: 100%;">
+      <p>Figure 2. Second prototype of arm design. The second iteration of the arm was built with an extendable 3D printed body. The wheel was replaced by a smaller Lego brand wheel that better fit the new body’s size and had a tire with higher traction.</p>
+  </div>
+  <div class="col-sm-12 col-lg small-block">
+   <img class="mt-3 center" src="images/STEMII_Figure_3.jpg" alt="Picture of Stem2 Figure" style="display: inline; width: 100%;">
+   <p>Figure 3. Preliminary wooden electrical housing. First model of housing for electrical components of the device, built from plywood. </p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 col-lg small-block">
+    <h2>Build and Testing</h2>
+    <p>&emsp;&emsp;To create the final prototype, we refined aspects of the previous iterations and finished features such as the page clamps and page flipper (Fig. 4). Compared to the last prototype, the arm and wheel mechanism remained mostly unchanged, other than a small hole added to the plastic arm body that allowed a screwdriver easier access to the motor attachment point. The general motor configurations also remained unchanged, with the wheel’s MG90S motor wired to the Arduino and the arm’s MG996R motor wired to the PWM driver. </p>
+    <p>&emsp;&emsp;The electrical housing and input mechanism underwent more drastic changes. We kept the idea of using plywood, but reduced the size of the box to increase portability. Holes were drilled into the lid for access to a set of larger buttons, as well as for a pair of LEDs that indicated if the device and arm were receiving power (Fig. 4). Holes were also made in the sides of the box so that the power source could be connected externally and the motors could be wired inside. The box was sanded and spray painted for safety and aesthetics, and 3D-printed lettering was added to the lid for easy navigation.</p>
+    <p>&emsp;&emsp;The clamps and page flipper were completed in the final iteration of our device. The motors were secured inside 3D-printed bases that were attached by velcro to a heavy copper plate to prevent movement (Fig. 4)..  Stones provided additional weight when necessary. The velcro tape allowed for adjustability as the clamps and flipper could be moved according to the book’s size. Finally, the actual clamp and flipper parts were 3D-printed and attached to the motors. The motor configuration remained mostly unchanged from the previous prototype. The attaching wires were extended and braided for easier handling and set up, and the motors were connected externally through holes in the sides of the electrical housing box.</p>
+</div>
+</div>
+
+<div class="row">
+
+  <div class="col-sm-12 col-lg small-block">
+    <h2>Analysis</h2>
+    <img class="rounded mx-auto d-block mt-3" src="./images/STEMII_Engineering_Matrix.jpg" style="display: inline; width: 80%;">
+    <p>Table 1. Engineering Matrix. An engineering matrix showing a comparison of performance for competitors, the preliminary designs, the prototypes, and the final design.</p>
+
+    <p>&emsp;&emsp;The overall concept of our device remained the same from the initial to final prototype. We stuck with a wheel-based design that rolled up the page, lifted it, and flipped it to the other side. Our first prototype was a cardboard conceptual model. This prototype was not functional and contained no electrical components, but served as a good visualization for the next steps. Our second prototype was  the first semi-functional version of the device. While it lacked the clamps and page flipper, the arm and wheel performed the basic desired movements, and the PVC pipe body was durable and served its purpose (Fig. 1). However, we were not able to adjust the pipe for smaller books and had issues attempting to build a telescoping PVC pipe-based body. Additionally, the wheel was too large and did not have enough traction to grip the page. For these reasons, we changed the arm to be a 3D-printed part fit with a telescoping lock for our third prototype and replaced the wheel with a smaller one (Fig. 2). This part was lighter, less bulky, and adjustable to different book sizes. The third prototype also included a plywood box that served as electrical housing and a base for the arm to attach to. While functional, the box was rough and larger than necessary, making it inconvenient to carry around (Fig. 3). The device also lacked page clamps and the page flipper. We resolved these issues in our final device, which consisted of the arm and wheel from the third prototype, a new, smaller box for electrical housing, and the missing clamp and flipper parts. The final electrical housing box was constructed of thicker plywood for increased durability and was sanded and painted for aesthetic purposes (Fig. 4). Holes drilled into the box allowed for easy access to power sources and secured the input buttons to the lid. The page clamps and flipper were built with an MS18 180-degree motor attached to a 3D-printed base. The actual clamp and flipper parts were also 3D-printed and affixed to the end of the motor. </p>
+    <p>&emsp;&emsp;The final prototype is functional and meets the majority of the design requirements (Table 2). The extendable arm body paired with the smaller Lego wheel works well in lifting pages and is able to successfully turn one page forward or backward most of the time. A drawback is that the device occasionally flips more than one page, requiring the user to turn additional pages to return to their desired position. The page clamps work well with the arm to turn the page, however the force applied by the clamps is weak and often does not properly pin down the pages; this issue is likely related to the strength of the motors. The page flipper also functions well and effectively carries pages over to the other side of the book. It would be beneficial to make the flipper’s height adjustable for the future so it does not accidentally catch on pages. Finally, the electrical housing box and input system work well in organizing the electrical components and controlling the device. The user can connect the device to power externally and has access to the power and Arduino cable ports on the Arduino board. The buttons are large, easy to press, and well labeled, allowing for an enjoyable user experience.</p>
+</div>
+</div>
+
+
+<div class="row">
+   <div class="col-sm-12 col-lg small-block">
+      <h2>Demo</h2>
+      <div class="d-flex justify-content-center">
+        <iframe  class="embed-responsive-item m-3" width="80%" height="500vh" src="https://www.youtube.com/embed/hYUFaQKX1MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div class="row justify-content-around m-0 p-0">
+  <div class="col-sm-12 col-lg small-block "> 
+    <h2 class="mb-4">STEM II Poster</h2>
+    <div class="d-flex justify-content-center"><iframe src="./pdfjs-2.12.313-dist/web/viewer.html?file=/~rmechery/docs/STEM2_07_ADR_Poster.pdf#zoom=21"
+        width="80%"
+        height="775vh"
+        style="border: none;"></iframe></div>
+    <p>If the PDF hasn't loaded, click <a href="./docs/STEM2_07_ADR_Poster.pdf" target="_blank">here</a>.</p>
+</div>
+</div>
+
+<div class="row justify-content-around m-0 p-0">
+  <div class="col-sm-12 col-lg small-block"> 
+    <h2 class="mb-4">STEM II Presentation</h2>
+    <div class="d-flex justify-content-center"><iframe src="./pdfjs-2.12.313-dist/web/viewer.html?file=/~rmechery/docs/STEM2_07_Presentation.pdf#zoom=90"
+        width="80%"
+        height="750vh"
+        style="border: none;"></iframe></div>
+    <p>If the PDF hasn't loaded, click <a href="./docs/STEM2_07_Presentation.pdf" target="_blank">here</a>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<footer id="footerID">
+    <!-- navigation bar is loaded w/js -->
+    <script src="./scripts/navBar.js"></script>
+    <!-- Footer is located within scripts/footerScript.js. This is done so footer can be updated on all pages at once. -->
+    <script src="./scripts/footerScript.js"></script>
+</footer>
+
+</body>
+</html>

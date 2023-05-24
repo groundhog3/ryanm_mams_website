@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ryan Mechery MAMS '23</title>
+    <link rel="shortcut icon" type="image/jpg" href="./icons/favicon_round.png" />
+    <meta name="author" content="Ryan Mechery">
+    <meta name="description" content="This is my Physics page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="myNav" class="overlay">
+    </div>
+    <div id="topBar"></div>
+    <div class="parallax-header">
+        <h1>Physics</h1>
+        <p>scroll down to learn more</p>
+    </div>
+    <div id="physics-parallax" class="parallax"></div>
+    <!-- This script contains an array of the all images used for parallax. -->
+        <script src="./scripts/parallaxScript.js"></script>
+    <div class="block">
+        <h2>Course Description</h2>
+        <p>Physics is taught by Mr. Ellis and it is a challenging yet mentally stimulating class that teaches conceptual physics through lots and lots of problem-solving. Through end-of-chapter problems (EOCS), rigorous tests, Excel writeups, and formal problem writeups, we learn many of the tools we need to think and work like physicists. For those who have previously studied Calculus, or want to try something new, a Calculus track is offered which lines up with the AP Physics C curriculum.</p>
+    </div>
+
+    <div class="block">
+        <h2>Über Rocket</h2>
+        <p>Every term, Mr. Ellis assigns us a physics problem to solve that has many different parts to get a final answer. With the Über Rocket problem, we were tasked with determining the total time a rocket traveled through the air with different accelerations. Once we solve the problem, we create a formal write-up in Microsoft Word.</p>
+        <div class="vertical-center">
+            <iframe src="./pdfjs-2.12.313-dist/web/viewer.html?file=/~rmechery/docs/Uber_Rocket_Calculus.pdf#zoom=70"
+            width="800vw"
+            height="550vh"
+            style="border: none;"></iframe>
+        </div>
+        <p>If the PDF hasn't loaded, click <a href="./docs/Über_Rocket_ Calculus.pdf" target="_blank">here</a>.</p>
+    </div>
+
+    <div class="block">
+        <h2>Physics Simulation</h2>
+        <p>The physics simulation was an extra credit option in which you had to create an interactive program that could model projectile motion in 2d with outputs displayed. I chose to work with Javascript along with the p5.js library for the coding and Bootstrap was used as a stylesheet. Although the animation is a little bit glitchy, you can still play around with the demo below. The source code can be found at this <a href="https://github.com/groundhog3/Projectile_Motion_Simulation" target="_external">Github link</a>.</p>
+        <!--Code from https://atomisystems.com/html5-animation/saola-animate-2/embedding-html5-project-into-webpage/-->
+        <div style="width:100%; padding-bottom:73%; position:relative;">
+            <iframe src="physim/index.html" style="position:absolute; top:0px; left:0px; 
+            width:100%; height:100%; border: none; overflow: hidden;"></iframe>
+          </div>
+    </div>
+
+    <footer id="footerID">
+        <!-- navigation bar is loaded w/js -->
+        <script src="./scripts/navBar.js"></script>
+        <!-- Footer is located within scripts/footerScript.js. This is done so footer can be updated on all pages at once. -->
+        <script src="./scripts/footerScript.js"></script>
+    </footer>
+</body>
+</html>

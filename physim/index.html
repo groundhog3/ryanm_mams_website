@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Projectile Motion</title>
+</head>
+
+<body class="bg-dark text-light">
+  <div class="container">
+    <h2 class="text-center mt-1">Ryan Mechery's Physics Simulation <br>Projectile Motion</h2>
+    <h5 class="pull-left">Directions:</h5>
+    <div class="d-flex justify-content-around">
+      <p>Use <button class="btn-sm btn-warning">Reset</button> after setting a new parameter or when animation is done.</p>
+      <p>Toggle <kbd>Space</kbd> to play/pause the animation.</p>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div id="canvasDiv"></div>
+      <table class="table table-sm table-dark ml-5">
+        <tbody>
+          <tr>
+            <th scope="row">Time</th>
+            <td id="timeElem">0 s</td>
+          </tr>
+          <tr>
+            <th scope="row">Velocity X</th>
+            <td id="velXElem">0 m/s</td>
+           </tr>
+          <tr>
+          <tr>
+            <th scope="row">Velocity Y</th>
+            <td id="velYElem">0 m/s</td>
+           </tr>
+          <tr>
+            <th scope="row">Position X</th>
+            <td id="posXElem">0 m</td>
+          </tr>
+          <tr>
+            <th scope="row">Position Y</th>
+            <td id="posYElem">0 m</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    
+    <button type="button" class="btn btn-success" id="startButton">Start</button>
+    <button type="button" class="btn btn-danger" id="stopButton">Stop</button>
+    <button type="button" class="btn btn-warning" id="resetButton">Reset</button>
+
+    <div class="w-50 p-2">
+      <label for="velocitySlider" class="form-label">Velocity</label>
+      <input type="range" class="form-range" min="1" max="40" step="0.5" id="velocitySlider" value="10" oninput="this.nextElementSibling.value = this.value + ' m/s'">
+      <output>10 m/s</output>
+    </div>
+    <div class="w-50 p-2">
+      <label for="angleSlider" class="form-label">Angle</label>
+      <input type="range" class="form-range" min="-90" max="90" step="1" id="angleSlider" value="45" oninput="this.nextElementSibling.value = this.value + '°'">
+      <output>45°</output>
+    </div>
+    <div class="w-50 p-2">
+      <label for="angleSlider" class="form-label">Height</label>
+      <input type="range" class="form-range" min="0" max="50" step="1" id="heightSlider" value="0" oninput="this.nextElementSibling.value = this.value + ' m'">
+      <output>0 m</output>
+    </div>
+  </div>
+</body>
+<footer>
+  <script src="sketch.js"></script>
+</footer>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <title>Ryan Mechery MAMS '23</title>
+    <link rel="shortcut icon" type="image/jpg" href="./icons/favicon_round.png" />
+    <meta name="author" content="Ryan Mechery">
+    <meta name="description" content="This is my Stem1 page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/stem1CSS.js"></script>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/bootstrap-grid.css" rel="stylesheet">
+</head>
+
+<body class="text-light stemBody">
+    <div id="myNav" class="overlay">
+    </div>
+
+    <div id="topBar"></div>
+    
+    <div class="parallax-header">
+        <h1>STEM I</h1>
+        <p>scroll down to learn more</p>
+    </div>
+    <div id="stem1-parallax" class="parallax"></div>
+    <!-- This script contains an array of the all images used for parallax. -->
+      <script src="./scripts/parallaxScript.js"></script>
+
+
+    <h2 class="stem-h2 mt-4 mb-4">Minimizing Language Dependency in a Voice Authentication System</h2>
+    <div class="container mt-3" id="pdfRenderDiv">
+      <div class="row">
+        <div class="col small-block">
+          <h2>Overview</h2>
+          <p>STEM I is taught by Dr. Crowthers and through class discussions, work on our STEM I project, and group projects, we learn important scientific research and engineering principles. The scientific and technical writing aspect of the class teaches us how to write research papers, short essays, infographics, speeches, technical reports, and scientific posters. After finishing our STEM I project which aligns with the <a href="https://scifair.com/" target="_external">MSEF</a> standard, we will begin to work on an assistive technology project in C Term. </p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-lg small-block">
+          <h2>Abstract</h2>
+          <div id="scrollBarAbstract">
+          <p>&emsp;&emsp;As people store more of their personal data online, there is a growing need for a better method of authentication. Although many mobile devices are equipped with fingerprint or facial recognition systems, a majority of PCs around the world lack biometric capabilities. Voice Authentication (VA) is perfect for these scenarios as it is a behavioral biometric that analyzes one’s habits as opposed to saving measurements, and its only requirement for authentication is a working microphone. However, before VA can be implemented on current systems worldwide, the issue of language dependency must be fixed. Language dependency causes VA systems to perform with different accuracies when tested with different languages. The aim of this project was to find factors that minimized language dependency and create a working VA system in Python that formats and compares recordings to determine the optimal threshold value which would allow for the highest detection accuracy at validation. This system was tested with 5 world languages from the Common Voice Dataset. Preliminary testing found that adjusting hyperparameters related to audio processing, was largely ineffective so different statistical tests were used in the Log-Likelihood Ratio Test (LRT) portion of the algorithm. The results show that when a F-Test was used, the system, on average, performed with a ROC AUC of 74% compared to 72% with the Chi-Square Test. Using these findings and some more tweaking, this GMM VA system can be implemented on IoT devices as a new method of Multi-Factor Authentication (MFA).<br>&emsp;<i>Keywords</i>: Voice Authentication, Speaker Verification, Gaussian Mixture Modelling (GMM), Mel-Frequency Cepstral Coefficients (MFCCs)</p>
+         </div>
+        </div>
+        <div class="col-sm-12 col-lg small-block p-3">
+          <!--Graphical ABSTRACT- Will be worked on as we get closer To Feb Fair-->
+          <img src="images/Graphical_Abstract.jpg" height="auto" width="100%">
+        </div>
+      </div>
+      <div class="row" id="return">
+        <div class="col small-block">
+          <h2 class="mb-4">Research Proposal</h2>
+           
+           <p class="text-align">Click <a href="stem_docs.html" >here</a> to view the STEM Docs page.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col small-block">
+          <h2 class="mb-4">Literature Review</h2>
+          <p class="text-align">Click <a href="stem_docs.html" >here</a> to view the STEM Docs page.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-lg small-block align-items-center">
+          <h2>Phrase 1</h2>
+          <p>Text Independent Speaker Verification (TISV) systems offer variable accuracies when tested with different world languages due to language dependency.</p>
+        </div>
+        <div class="col-sm-12 col-lg small-block">
+          <h2>Phrase 2</h2>
+          <p>The goal of this project is to engineer a speaker verification system and test it with different world languages. Through analysis of system performance, the aim is to identify hyperparameters that increase the accuracy of the system overall to minimize language dependency.</p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-lg small-block p-3">
+          <img src="images/Background_Infographic.png" alt="This is a picture of the background infographic." width="100%">
+        </div>
+        <div class="col-sm-12 col-lg small-block">
+          <h2>Background</h2>
+          <div id="scrollBarBackground">
+          <p>&emsp;Voice Authentication (VA) systems use voice biometrics to validate a user’s identity. If not for language dependency, VA can be a universal method of authentication since these systems are simple and cost-effective to implement. Language dependency is defined as a system’s need to be trained in one language and this means that systems optimized for one language, could have vastly different results with another language. Most systems don’t address this issue and even experimental ones created to minimize this issue were limited in functionality because of a vague testing strategy as well as technological limits of the time. The factors that influence language dependency are not known and need to be researched before voice authentication can be used worldwide. 
+            <br>&emsp;Authentication is a method for the validation of one’s identity. There are three types of authentications: knowledge, ownership, and inherent based. Knowledge-based authentications involve traditional passphrases that are easy to remember but are prone to brute force and dictionary attacks. Ownership-based authentications involve a physical device such as smart cards or RFID chips but they require hardware revisions to be implemented. Inherent-based authentication is the most secure method compared to former methods as it involves biometrics, which are measurements of unique characteristics of the human body (Barkadehi et al, 2018).<br>&emsp;Although biometrics are prone to forgery and replay attacks, they are secure because they cannot be forgotten or stolen from a user. There are two types of biometrics: physical and behavioral. Physical biometrics involve direct measurements that can be scanned from the body. Examples include facial, iris, and fingerprint biometrics. Behavioral biometrics involves measurements of a user’s unique habits and examples include gait, signature, and namely, voice biometrics (Marinov & Skövde, 2003). Although each type of biometric is very different in both architecture and use case, they all have general advantages and drawbacks. The pros of physical biometrics are that they are widely used and implemented, are stored as direct measurements of the body, and do not need to be rescanned. However, physical biometrics are sensitive to injuries that disfigure the body, the process requires complex sensors that drive up costs, and most importantly, once a physical biometric is copied by an attacker, it is stolen forever and cannot be reset. Although behavioral biometrics are inconsistent as a user’s behavior may change slightly over time, they are more difficult to copy compared to physical biometrics (Jirik, 2021).<br>&emsp;As more and more personal data is stored on servers around the world, authentication is becoming an increasingly relevant topic in today’s technologically advanced world. Although people may feel that this data is secure, it can be easily stolen by faulty and weak passwords. According to the 2016 Verizon Data Breach Investigations Report (DBIR), over 80% of data branches were due to weak and stolen passwords. Although most people worldwide have a smartphone model with some type of biometric for authentication, this fact does not apply to other devices such as laptops, computers, and tablets. Voice Authentication is an example of a behavioral biometric that can be already implemented on many of these devices without the need for an upgrade .<br>&emsp;Voice Authentication systems have many different components and aspects that all impact accuracy of authentication. Many issues with these systems have been identified and can be fixed with hardware and software revisions. However, many developers have failed to mention nor fix language dependency. Language dependency is defined as a system’s need to be enrolled and validated in the same language. Due to the phonetic variations of different languages, a voice authentication system, by nature, will provide different accuracies of authentication. A possible reason for this phenomenon is that more phonetically complex languages need a lot more enrollment audio for model creation and training than is practical for an authentication system. <br>&emsp;Some designs that account for this problem have been written about in academia. For example, Auckenthaler Et. Al created a system for voice authentication in 2001 and tested it with twelve world languages from various families. Overall, the researchers found that models trained with Chinese and Vietnamese obtained a 15% and 20% Equal Error Rate (EER), respectively, while models trained with English performed at around a 12% EER. While these results support the idea that more phonetically complex languages will have lower rates of authentication in VA systems, the experiment was not fully investigated. Although the selection of languages seems diverse, half belonged to the same language family. Second, the researchers admitted that they did not have a proper audio database of utterances at the time of testing. This means that the low accuracy rates could be due to other factors such as poor microphone quality and sampling errors. As previously stated, voice authentication systems have many different components and aspects that all impact language dependency. Hyperparameter training must be utilized to isolate, and identify these issues, before voice authentication can marketed as a universal biometric.<br>&emsp;In order to fix this issue, a text independent speaker verification system was created in python and tested with different world languages from Mozilla’s Common Voice Dataset. Since the system was designed with the intent of being implemented on Internet of Things (IOT) devices, it utilizes statical modeling, as opposed to Neural Networks, which are more computationally expensive. The statistical model that was chosen was Gaussian Mixture Model trained with a feature vector comprised of Mel-Frequency Coefficients (MFCCs). Although voice authentication systems have many different components that can be adjusted, preliminary testing in this project found that adjusting hyperparameters related to audio processing were largely ineffective. Instead, different statistical tests were used in likelihood ratio testing (LRT), and the accuracy of the system, relative to each language, became the defining factor in test selection. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-lg small-block p-3">
+          <img src="./images/Methods_Infographic.jpeg" width="100%" height="100%" alt="This is a picture of the methods infographic.">
+        </div>
+        <div class="col-sm-12 col-lg small-block">
+          <h2>Procedure</h2>
+          <div id="scrollBarProcedure">
+          <p><h3>Equipment and Materials</h3>&emsp;&emsp;The voice authentication system created in this project used a statistical method of speech modeling known as Gaussian Mixture Modeling (GMM). For VA systems created using statistical modeling, this is a state-of-the-art methodology that has had many adaptions. This architecture has been standardized in the audio analysis community but the main paper referred to in system creation was titled, “Speaker Verification using Gaussian Mixture Model (GMM-UBM)”, (Fabien, 2019). This paper only provided an overarching explanation of the components of a GMM system so its implementation in code was entirely unique to this project. In addition, the paper described additional steps to create a GMM Universal Background Model which was determined to be unnecessary for this project, so directions had to be adjusted as to only pertain to the focus of this project.<br>&emsp;&emsp;The creation of the VA system was done entirely in Python 3.9 in a conda environment on an M1 Macbook Air. Although many different packages were used, the two main dependencies central to the VA architecture include Librosa and Scikit-Learn. Librosa is a music and audio analysis program that was used to resample audio as well as extract Mel-Frequency Cepstral Coefficients from the audio samples. Scikit-Learn is a machine learning library that was used in creation of Gaussian Mixture Models as well as performing statistical tests such as the Chi-Squared Test of Independence and the F-Test in nested model detection.<br>&emsp;&emsp;After the preliminary system was created in early December, a condenser microphone was used to take recordings and test the accuracy of the system. However, in further testing, audio samples were downloaded and reformatted from the Common Voice Dataset provided by Moz://a. This is a speech corpus, or utterance database, which contains 14,122 hours of validated audio from 87 languages.<br>&emsp;&emsp;All the recordings in this project were pre-processed to remove imperfections. To prevent file corruption and audio distortion, Audacity was used to edit the recordings and each recording was played back to ensure that recordings weren’t misplaced.<br>&emsp;&emsp;Microsoft Excel was used to convert metrics calculated by the authentication system into a Receiver Operator Characteristics (ROC) curve. Additionally, using color scales, the software was used to determine the optimal threshold value for the lowest Equal Error Rate (EER). An example of the excel template is attached in Appendix C.<h3>Data Collection</h3>&emsp;&emsp;Before the system was created, recordings were collected to create a customized, speech corpus. Because the system created used 40 seconds of enrollment data and 5 seconds of audio data as a control, recordings had to be formatted in precisely these measurements for the system to create a GMM model. In order to do this, the recordings first had to parsed, then pre-processed for audio normalization, and then split with a unique file naming convention for the python scripts to detect the audio files.  <h3>Common Voice Dataset (CVD) Parsing</h3>&emsp;&emsp;Because the CVD dataset was created for testing speech recognition systems, a majority of the recordings were segmented by sentences and many audio recordings contained various imperfections. This made it impossible to directly use the audio recordings given without first formatting them. In order to parse through the dataset, individual speakers had to be determined according to a self-identified criteria of a half-male and half-female speech corpus with a variety in ages if possible. Once the speakers were identified, the fileFinder.py script (see Appendix A), was used to copy a list of recordings into a specified directory (e.x. Languages -> English -> sp-1 -> recording1.mp3). Next, the splitAudio.py script (see Appendix B) was used to merge each of the recordings into one mp3 file of many utterances.<h3>Audacity</h3>&emsp;&emsp;The merged mp3 file created by the splitAudio.py script was next opened in Audacity where audio processing techniques were performed. The techniques used in this project were Audio Normalization, or more specifically, Peak Normalization, which adjusted all the different amplitude values in the audio file container and adjusted the scale of the entire value array so the peak amplitude value would not reach above/below a -1 to 1 scale. Next, Truncate Silence, was used to preserve only the utterances in the audio recording by truncating any sound under -20 decibels (silence) for more than 0.5 seconds into 0.1 seconds of audio data. Next, this processed recording was exported into a wav audio file for further parsing. <h3>Common Voice Dataset (CVD) Parsing Continued</h3>&emsp;&emsp;The mergeAudio.py script (see Appendix C) was used to adapt the first 40 seconds of the processed wav file into one enrollment audio file used in model creation, while the remaining portion of the wav file split into equal 5 second segments to create many different validation files. The enrollment audio files followed the file naming convention of “enrollment {speaker-name}” and the validation files were named as “validation {speaker-name} #{count}” so the data_class.py (see Appendix D), enrollment.py (see Appendix E) and the validation.py (see Appendix F) scripts all could recognize the audio recordings.  <h3>Gaussian Mixture Modeling</h3>&emsp;&emsp;The final system utilized two scripts, enrollment.py (Appendix E) and validation.py (Appendix F), to authenticate the recordings of the speakers collected from parsing through the CVD. <h3>Enrollment</h3>&emsp;&emsp;This is the first phase of authentication where a user is registered into a system. The enrollment.py script scanned for all the different enrollment audio files and used Librosa to extract a certain number of Mel-Frequency coefficients, at a certain hop length, from an audio sample framed at 22ms. The feature vector was fitted to a univariate Gaussian Mixture Model with 100 iterations used in Expectation Maximization. To save in processing time, the model was saved in a pickle file (.pkl) into the working directory so that it could be accessed by the validation script.<h3>Validation</h3>&emsp;&emsp;The validation.py script was the core of the authentication system overall and it was how the entirety of the data was collected in this project. The script first began by scanning the working directory for all validation files. In each trial the system would perform the same model creation technique as described in the previous section to create a validation model of user speech. This hypothesized model was compared against its associated registered model using two different techniques. The first technique is called Likelihood Ratio Testing (LRT) which is the most common method of nested model detection. This computes the log-likelihoods of both models, which is a kind of distance metric from two different vectors and uses the Chi-Squared Test of Independence to compare both log-likelihoods and scores. Wilk’s Theorem states that if the result of the LRT is below a certain threshold value, you reject the null hypothesis which is that both models are not nested, or in other words, the system returns a result of “REJECTION” because it believes both models do not come from the same person (source needed here – I just wrote this off the top of my head). For a result of “ACCEPTANCE” this works vice versa. The F-Test is another method of nested model detection that was used in this project because it has not been referenced in academia for this application. The F-Test was calculated under the assumption that a GMM follows an F-Distribution and the threshold testing applies the same as in the Likelihood Ratio Testing. Regardless of both tests, the system calculated various performance metrics at each different threshold value including the True Acceptance Rate (TAR), False Acceptance Rate (FAR), True Rejection Rate (TRR), False Rejection Rate (FRR), Accuracy, and the Equal Error Rate (EER). All this data was outputted by the system into the terminal in each trial, and these values were copied and pasted into Excel for Detection Error Tradeoff (DET) and Receiver Operator Characteristics (ROC) graph construction, as well as further analysis. 
+          </p>
+      </div>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-sm-12 col-lg-5 small-block">
+          <h2>Figure #1</h2>
+          <img class="mt-3" src="./images/figure_1.png" style="display: inline; width: 100%;">
+          <p>Receiver Operator Characteristics (ROC) Curve Showing System Performance of Final System from 23 Speakers in 5 languages.</p>
+        </div>
+        <div class="col-sm-12 col-lg-5 small-block">
+          <h2>Table #1</h2>
+          <img class="mt-3" src="./images/figure_2.png" style="display: inline; width: 100%;">
+          <p>Unpaired T test Between Average ROC of the System and Phoneme Count of each Language.</p>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-sm-12 col-lg-5 small-block">
+          <h2>Figure #2</h2>
+          <img class="mt-3" src="./images/figure_3.png" style="display: inline; width: 100%;">
+          <p>Accuracy (left), Equal Error Rate (Right), and ROC (bottom) of the final system.</p>
+        </div>
+        <div class="col-sm-12 col-lg-5 small-block">
+          <h2>Figure #3</h2>
+          <div id="figure3Scrollbar">
+            <img class="mt-3 center" src="./images/figure_4.png" style="display: inline; width: 100%;">
+            <p>Sample code developed for this project. This code snippet (created with <a href="https://carbon.now.sh/">Carbon</a>) shows the enrollment module which is one of the scripts used to authenticate a user. All code is availble on this public <a href="https://github.com/groundhog3/Language_Independent_SV">Github</a> repository.</p>
+         </div>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-sm-12 col-lg-11 small-block"> 
+          <h2>Analysis</h2>
+          <ul>
+           <li> A two-sample unpaired t-test, pictured in Table #1, showed a strong significance
+(***p<0.001) between the phoneme count and the system's
+performance with each language.</li>
+              <li>The system's peak performance, as shown in Figure #2, was with an ROC of 74.124% which translated into an authentication accuracy of 80.100% an Equal Error Rate (EER) of 30.200%.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-sm-12 col-lg-11 small-block"> 
+          <h2>Discussion & Conclusion</h2>
+          <ul>
+            <li>Although the system performed with an acceptable ROC of 74.124% for a binary classification system, for an authentication system, it performed with underwhelming authentication and error rates.</li>
+            <li>Results from preliminary trials show that adjusting hyperparameters related to audio processing was largely ineffective.</li>
+            <li>Further testing revealed that using F-Test as compared to the Likelihood Ratio Test in nested model detection improved the overall ROC performance by 1.96% which then minimized language dependency.</li>
+            <li>Using an F-Test for nested model detection in TISV-GMM systems has not been written about in academia for this purpose.&nbsp;</li>
+            <li>The system itself is not complete, the threshold testing with the ROC curves shows inconsistent threshold values and as such, this system needs more refinement before it is fully functioning.</li>
+        </ul>
+        <ul>
+          <li>Although statistical modeling for TISV was found to be ineffective, if this experiment were to be extended, it would use Neural Network or I-Vector Based methods for Speaker Verification for better performance.</li>
+          <li>This system would still be tested in exactly the same way with the same recordings to minimize language dependency.</li>
+          <li>Additionally, using recordings from the same microphone would benefit hyperparameter testing by eliminating the possibility that unexpected system performance was due to microphone quality.</li>
+          <li>The current command line application could be converted into a GUI application to demonstrate its ability as a new method of multi-Factor Authentication (MFA).</li>
+        </ul>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-sm-12 col-lg-11 small-block"> 
+          <h2>References</h2>
+          <p style="text-indent:0in;">Antlion Audio. (2019). <em>How do you know if your mic is bad?</em> Retrieved from</p>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="https://antlionaudio.com/blogs/news/how-do-you-know-if-your-mic-is-bad">https://antlionaudio.com/blogs/news/how-do-you-know-if-your-mic-is-bad</a>.</p>
+          <p style="text-indent:0in;">Auckenthaler, R., Carey, M. J., &amp; Mason, J. S. (2001, May). Language dependency in text-</p>
+          <p style="margin-left:.5in;text-indent:0in;">independent speaker verification. In <em>2001 IEEE International Conference on Acoustics, Speech, and Signal Processing. Proceedings</em> (Cat. No. 01CH37221) (Vol. 1, pp. 441-444). IEEE.</p>
+          <p style="text-indent:0in;">Barkadehi, M. H., Nilashi, M., Ibrahim, O., Zakeri Fardi, A., &amp; Samad, S. (2018). A journal</p>
+          <p style="margin-left:.5in;text-indent:0in;">article &ndash; Authentication systems: A literature review and classification. <a href="https://doi.org/10.1016/j.tele.2018.03.018">https://doi.org/10.1016/j.tele.2018.03.018</a></p>
+          <p style="text-indent:0in;">Beigi, H. (2011). Speaker Recognition. In: <em>Fundamentals of Speaker Recognition</em>.</p>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Springer, Boston, MA. <a href="https://doi.org/10.1007/978-0-387-77592-0_17">https://doi.org/10.1007/978-0-387-77592-0_17</a></p>
+          <p style="text-indent:0in;">Campbell, T. (2018). <em>Audio Normalization: What Is It and Why Do We Do It?</em> Medium.</p>
+          <p style="margin-left:.5in;text-indent:0in;"><a href="https://medium.com/tannerhelps/audio-normalization-what-is-it-and-why-do-we-do-it-37b63176b914">https://medium.com/tannerhelps/audio-normalization-what-is-it-and-why-do-we-do-it-37b63176b914</a></p>
+          <p style="text-indent:0in;">Fox, A. (2021). <em>What is microphone sensitivity? an in-depth description</em>. My New Microphone.</p>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Retrieved from <a href="https://mynewmicrophone.com/microphone-sensitivity/">https://mynewmicrophone.com/microphone-sensitivity/</a>.</p>
+          <p style="text-indent:0in;">Jirik, P. (2021). <em>5 Popular Types of Biometric Authentication: Pros</em></p>
+          <p style="margin-left:.5in;text-indent:0in;"><em>and Cons</em>. PHONEXIA Speech Technologies. <a href="https://www.phonexia.com/en/blog/5-popular-types-of-biometric-authentication-pros-and-cons/">https://www.phonexia.com/en/blog/5-popular-types-of-biometric-authentication-pros-and-cons/</a></p>
+          <p style="text-indent:0in;">Maddieson, I. (1984). <em>Patterns of sounds</em>. Cambridge University Press.</p>
+          <p style="text-indent:0in;">Mahanta, S. K., &amp; Padmanabhan, A. (2021). Audio Feature Extraction. Devopedia.</p>
+          <p>Retrieved November 15, 2021, from <a href="https://devopedia.org/audio-feature-extraction">https://devopedia.org/audio-feature-extraction</a>.</p>
+          <p style="text-indent:0in;">Marinov, S., &amp; Sk&ouml;vde, H. I. (2003). <em>Text Dependent and Text Independent Speaker Verification&nbsp;</em></p>
+          <p><em>Systems. Technology and Applications</em>. Retrieved December 21, 2021.</p>
+          <p style="text-indent:0in;">Ratner, N. B., &amp; Gleason, J. B. (2004). Psycholinguistics. In L. R. Squire (Ed.), <em>Encyclopedia of&nbsp;</em></p>
+          <p style="margin-left:.5in;text-indent:0in;"><em>Neuroscience</em> (pp. 1199&ndash;1204). Academic Press. <a href="https://doi.org/10.1016/B978-008045046-9.01893-3">https://doi.org/10.1016/B978-008045046-9.01893-3</a></p>
+          <p style="text-indent:0in;">Reynolds, D. A. (2009). Gaussian mixture models. <em>Encyclopedia of biometrics</em>, 741, 659-663.</p>
+          <p style="text-indent:0in;">Reynolds, D. A., Quatieri, T. F., &amp; Dunn, R. B. (2000). Speaker verification using Adapted</p>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gaussian mixture models. <em>Digital Signal Processing</em>, 2000.</p>
+          <p style="text-indent:0in;">Sharma, H. (2021, December 3). <em>Biometric System Architecture</em>. GeeksforGeeks. Retrieved</p>
+          <p>December 21, 2021, from <a href="https://www.geeksforgeeks.org/biometric-system-architecture/">https://www.geeksforgeeks.org/biometric-system-architecture/</a></p>
+          <p style="text-indent:0in;">Stadelmann, T. (2010). <em>Voice Modeling Methods for Automatic Speaker Recognition</em>.<a href="#_msocom_3" id="_anchor_3" language="JavaScript" name="_msoanchor_3">[CK3]</a>&nbsp; <span id="isPasted" style="color: rgb(0, 0, 0); font-family: Times; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Retrieved December 21, 2021.</p>
+          <p style="text-indent:0in;">Tiwari, V. (2009). MFCC and its applications in speaker recognition. <em>International Journal on&nbsp;</em></p>
+          <p><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Emerging Technologies</em>. Retrieved December 21, 2021.</p>
+          <p style="text-indent:0in;">Velardo, V (2020). <em>Types of Audio Features for Machine Learning</em> [Video]. YouTube. &nbsp;&nbsp;</p>
+          <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://youtu.be/ZZ9u1vUtcIA" id="isPasted">https://youtu.be/ZZ9u1vUtcIA</a></p>
+          <div id="_com_1" language="JavaScript">
+              <p></p>
+          </div>
+          <div id="_com_4" language="JavaScript"><br></div>
+        </div>
+      </div>
+      <div class="row justify-content-around mb-5">
+        <div class="col-sm-12 col-lg-11 small-block"> 
+          <h2 class="mb-4">February Fair Poster</h2>
+          <iframe src="./pdfjs-2.12.313-dist/web/viewer.html?file=/~rmechery/docs/February_Fair_Poster.pdf#zoom=21"
+          width="100%"
+          height="700vh"
+          style="border: none;"></iframe>
+          <p>If the PDF hasn't loaded, click <a href="./docs/February_Fair_Poster.pdf" target="_blank">here</a>.</p>
+   
+        </div>
+      </div>
+    </div>
+
+    <footer id="footerID">
+        <!-- navigation bar is loaded w/js -->
+        <script src="./scripts/navBar.js"></script>
+        <!-- Footer is located within scripts/footerScript.js. This is done so footer can be updated on all pages at once. -->
+        <script src="./scripts/footerScript.js"></script>
+    </footer>
+</body>
+</html>
